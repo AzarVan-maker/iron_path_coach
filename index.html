@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Iron Path Coach — персональный фитнес-тренер</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-mark">IP</span>
+        <span>Iron Path Coach</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#goals">Цели</a>
+        <a href="#programs">Программы</a>
+        <a href="#calculator">Расчёт</a>
+        <a href="#results">Результаты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="https://t.me/hotelsupport01_bot?start=fitness_booking" class="header-btn" target="_blank">
+        Начать
+      </a>
+
+      <button class="burger" id="burgerBtn">☰</button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#goals">Цели</a>
+      <a href="#programs">Программы</a>
+      <a href="#calculator">Расчёт</a>
+      <a href="#results">Результаты</a>
+      <a href="#contacts">Контакты</a>
+      <a href="https://t.me/hotelsupport01_bot?start=fitness_booking" target="_blank">
+        Записаться в Telegram
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+          <p class="hero-label">Персональный тренер / онлайн-наставник</p>
+
+          <h1>
+            Тело меняется не от мотивации, а от системы
+          </h1>
+
+          <p class="hero-text">
+            Iron Path Coach помогает выстроить тренировки, питание и дисциплину
+            под вашу цель: похудение, набор массы, силу или возвращение формы.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#calculator" class="btn btn-primary">Рассчитать старт</a>
+            <a href="https://t.me/hotelsupport01_bot?start=fitness_booking" class="btn btn-dark" target="_blank">
+              Записаться в Telegram
+            </a>
+          </div>
+
+          <div class="hero-tags">
+            <span>Без хаоса</span>
+            <span>Под цель</span>
+            <span>С контролем</span>
+          </div>
+        </div>
+
+        <div class="hero-dashboard">
+          <div class="dashboard-top">
+            <p>Текущая программа</p>
+            <strong>12 недель</strong>
+          </div>
+
+          <div class="metric-grid">
+            <div class="metric-card">
+              <span>Тренировки</span>
+              <strong>4/нед</strong>
+            </div>
+
+            <div class="metric-card">
+              <span>Прогресс</span>
+              <strong>78%</strong>
+            </div>
+          </div>
+
+          <div class="coach-card">
+            <div>
+              <p>Фокус недели</p>
+              <h3>Сила + жиросжигание</h3>
+            </div>
+            <span class="pulse-dot"></span>
+          </div>
+
+          <div class="progress-block">
+            <div class="progress-head">
+              <span>Системность</span>
+              <strong>8.4 / 10</strong>
+            </div>
+            <div class="progress-line">
+              <div class="progress-fill"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="quick-strip">
+      <div class="container strip-grid">
+        <div>
+          <strong>3</strong>
+          <span>формата работы</span>
+        </div>
+
+        <div>
+          <strong>90+</strong>
+          <span>клиентов прошли программы</span>
+        </div>
+
+        <div>
+          <strong>24/7</strong>
+          <span>поддержка в чате</span>
+        </div>
+
+        <div>
+          <strong>12</strong>
+          <span>недель до заметной системы</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section goals-section" id="goals">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Выберите цель</p>
+          <h2>Под каждую цель — свой тренировочный подход</h2>
+          <p>
+            На сайте можно показать клиенту, что тренер не даёт случайные упражнения,
+            а собирает систему под конкретный результат.
+          </p>
+        </div>
+
+        <div class="goals-layout">
+          <div class="goal-tabs">
+            <button class="goal-tab active" data-goal="fat">Похудение</button>
+            <button class="goal-tab" data-goal="muscle">Набор массы</button>
+            <button class="goal-tab" data-goal="strength">Сила</button>
+            <button class="goal-tab" data-goal="shape">Форма</button>
+          </div>
+
+          <div class="goal-info" id="goalInfo">
+            <p class="goal-kicker">Цель</p>
+            <h3>Похудение без срывов</h3>
+            <p>
+              Фокус на дефиците калорий, силовых тренировках, шаговой активности
+              и контроле привычек. Без экстремальных диет и резких ограничений.
+            </p>
+
+            <div class="goal-points">
+              <span>Силовые 3–4 раза</span>
+              <span>Кардио по уровню</span>
+              <span>Контроль питания</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section programs-section" id="programs">
+      <div class="container">
+        <div class="section-head wide-head">
+          <p class="section-label">Программы</p>
+          <h2>Форматы работы под разный уровень подготовки</h2>
+        </div>
+
+        <div class="programs-row">
+
+          <article class="program-card">
+            <div class="program-number">01</div>
+            <h3>Start Form</h3>
+            <p>
+              Для тех, кто давно не тренировался или только начинает путь.
+            </p>
+
+            <ul>
+              <li>3 тренировки в неделю</li>
+              <li>Базовая техника</li>
+              <li>План питания без жёсткости</li>
+            </ul>
+
+            <div class="program-bottom">
+              <strong>от 5 000 ₽</strong>
+              <button class="program-btn" data-program="Start Form" data-price="5000">
+                Выбрать
+              </button>
+            </div>
+          </article>
+
+          <article class="program-card main-program">
+            <div class="program-number">02</div>
+            <h3>Body Rebuild</h3>
+            <p>
+              Основная программа для изменения тела, силы и привычек.
+            </p>
+
+            <ul>
+              <li>4 тренировки в неделю</li>
+              <li>Контроль прогресса</li>
+              <li>Поддержка в Telegram</li>
+            </ul>
+
+            <div class="program-bottom">
+              <strong>от 9 000 ₽</strong>
+              <button class="program-btn" data-program="Body Rebuild" data-price="9000">
+                Выбрать
+              </button>
+            </div>
+          </article>
+
+          <article class="program-card">
+            <div class="program-number">03</div>
+            <h3>Online Pro</h3>
+            <p>
+              Онлайн-сопровождение для тех, кто тренируется самостоятельно.
+            </p>
+
+            <ul>
+              <li>Индивидуальный план</li>
+              <li>Разбор отчётов</li>
+              <li>Коррекция нагрузки</li>
+            </ul>
+
+            <div class="program-bottom">
+              <strong>от 12 000 ₽</strong>
+              <button class="program-btn" data-program="Online Pro" data-price="12000">
+                Выбрать
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="container calculator-layout">
+
+        <div class="calculator-info">
+          <p class="section-label">Стартовый расчёт</p>
+
+          <h2>Проверьте, с чего лучше начать</h2>
+
+          <p>
+            Мини-калькулятор показывает базовую оценку и примерный стартовый фокус.
+            Для реального клиента это можно доработать в полноценную заявку.
+          </p>
+
+          <div class="warning-box">
+            Это демо-расчёт для сайта-портфолио. Он не заменяет консультацию врача,
+            тренера или специалиста по питанию.
+          </div>
+        </div>
+
+        <div class="fitness-calculator">
+          <label>
+            Рост, см
+            <input type="number" id="height" placeholder="Например, 178" />
+          </label>
+
+          <label>
+            Вес, кг
+            <input type="number" id="weight" placeholder="Например, 78" />
+          </label>
+
+          <label>
+            Тренировок в неделю
+            <input type="number" id="workouts" placeholder="Например, 3" />
+          </label>
+
+          <label>
+            Главная цель
+            <select id="fitnessGoal">
+              <option value="">Выберите цель</option>
+              <option value="fat">Похудение</option>
+              <option value="muscle">Набор массы</option>
+              <option value="strength">Сила</option>
+              <option value="shape">Общая форма</option>
+            </select>
+          </label>
+
+          <button class="btn btn-primary" id="calculateBtn">
+            Рассчитать старт
+          </button>
+
+          <div class="calculator-result" id="calculatorResult">
+            <h3>Результат появится здесь</h3>
+            <p>Введите данные и нажмите кнопку расчёта.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section results-section" id="results">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Результаты</p>
+          <h2>Прогресс — это цифры, фото и повторяемость</h2>
+        </div>
+
+        <div class="results-grid">
+          <div class="result-card">
+            <div class="result-photo result-1"></div>
+            <div class="result-content">
+              <span>12 недель</span>
+              <h3>-8 кг</h3>
+              <p>Снижение веса, улучшение выносливости, стабильные тренировки.</p>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-photo result-2"></div>
+            <div class="result-content">
+              <span>16 недель</span>
+              <h3>+5 кг массы</h3>
+              <p>Набор мышечной массы, прогресс в базовых упражнениях.</p>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-photo result-3"></div>
+            <div class="result-content">
+              <span>8 недель</span>
+              <h3>Форма и тонус</h3>
+              <p>Возвращение к режиму, улучшение самочувствия и дисциплины.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section">
+      <div class="container">
+        <div class="section-head wide-head">
+          <p class="section-label">Процесс</p>
+          <h2>Как проходит работа с тренером</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span>01</span>
+            <h3>Диагностика</h3>
+            <p>Разбираем цель, опыт, ограничения, питание и режим.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>02</span>
+            <h3>План</h3>
+            <p>Собираем программу тренировок и понятную систему действий.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>03</span>
+            <h3>Контроль</h3>
+            <p>Отчёты, корректировка нагрузки, поддержка и фиксация прогресса.</p>
+          </div>
+
+          <div class="timeline-item">
+            <span>04</span>
+            <h3>Результат</h3>
+            <p>Закрепляем привычки, технику и рабочий тренировочный ритм.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews-section">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-label">Отзывы</p>
+          <h2>Что говорят клиенты</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card">
+            <p>
+              “Мне понравилось, что всё было по системе. Не просто список упражнений,
+              а понятный план и контроль каждую неделю.”
+            </p>
+            <strong>Алексей</strong>
+            <span>Body Rebuild</span>
+          </div>
+
+          <div class="review-card">
+            <p>
+              “Начала с трёх тренировок в неделю. Через месяц уже появилась энергия,
+              режим и понимание, что делать дальше.”
+            </p>
+            <strong>Марина</strong>
+            <span>Start Form</span>
+          </div>
+
+          <div class="review-card">
+            <p>
+              “Онлайн-формат удобный: отправлял отчёты, получал корректировки,
+              тренировки стали намного понятнее.”
+            </p>
+            <strong>Дмитрий</strong>
+            <span>Online Pro</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div class="container contact-panel">
+
+        <div class="contact-left">
+          <p class="section-label">Заявка</p>
+
+          <h2>Начните с короткой консультации</h2>
+
+          <p>
+            Выберите цель, оставьте заявку или перейдите в Telegram.
+            Тренер уточнит ваш уровень, график и подберёт формат работы.
+          </p>
+
+          <a href="https://t.me/hotelsupport01_bot?start=fitness_booking" class="btn btn-primary" target="_blank">
+            Написать в Telegram
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Быстрая заявка</h3>
+
+          <input type="text" id="clientName" placeholder="Ваше имя" />
+          <input type="tel" id="clientPhone" placeholder="Телефон" />
+
+          <select id="clientGoal">
+            <option value="">Цель</option>
+            <option value="Похудение">Похудение</option>
+            <option value="Набор массы">Набор массы</option>
+            <option value="Сила">Сила</option>
+            <option value="Общая форма">Общая форма</option>
+          </select>
+
+          <button type="submit" class="btn btn-dark">
+            Оставить заявку
+          </button>
+
+          <p class="form-message" id="formMessage"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div class="booking-modal" id="bookingModal">
+    <div class="booking-modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+
+      <p class="section-label">Выбранная программа</p>
+      <h2 id="modalProgramName">Программа</h2>
+      <p id="modalProgramPrice">Цена</p>
+
+      <p class="modal-text">
+        Для продолжения перейдите в Telegram. Тренер уточнит цель, уровень подготовки
+        и подберёт удобный формат работы.
+      </p>
+
+      <a href="https://t.me/hotelsupport01_bot?start=fitness_booking" class="btn btn-primary" id="modalTelegramLink" target="_blank">
+        Продолжить в Telegram
+      </a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Iron Path Coach © 2026</p>
+      <p>Демо-сайт для портфолио веб-разработчика</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
